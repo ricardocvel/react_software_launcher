@@ -1,10 +1,5 @@
 import { Navigate, Route, Routes, Outlet } from 'react-router';
-
-export function PrivateRoutes() {
-  const authin = true;
-
-  return authin ? <Outlet /> : <Navigate to='/login' />;
-}
+import {PrivateRoutes} from './PrivateRoutes.routing'
 
 export function AppRoutes() {
   return (
@@ -17,6 +12,7 @@ export function AppRoutes() {
         <Route path='/user-form' element={<p>user form</p>} />
       </Route>
 
+      <Route path='/login' element={<p>login</p>} />
       <Route path='*' element={<Navigate to='/portifolio' />} />
     </Routes>
   );

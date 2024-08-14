@@ -12,19 +12,19 @@
 
 
 :root {
-  @include  light-theme()
+  @include light-theme()
 }
 
-:global {
 
-  .light {
-    @include light-theme()
-  }
 
-  .dark {
-    @include dark-theme()
-  }
+.light {
+  @include light-theme()
 }
+
+.dark {
+  @include dark-theme()
+}
+
 
 
 .title {
