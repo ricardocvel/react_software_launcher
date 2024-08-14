@@ -11,12 +11,19 @@ function App() {
   const toggleTheme = () => {
     setTheme(old => (old === 'light' ? 'dark' : 'light'));
     document.querySelector('#root')?.classList.toggle(styles[theme]);
-    navigate('home');
+    if ( location.href.includes('portifolio')) {
+      navigate('/');
+    } else {
+      navigate('/portifolio');
+    }
   };
 
   useEffect(() => {
     document.querySelector('#root')?.classList.add(styles[theme]);
   }, [theme]);
+
+  console.log(styles);
+  
 
   return (
     <div className='App'>
@@ -25,7 +32,16 @@ function App() {
       </header>
       <body>
         <button onClick={toggleTheme}> thema{theme}</button>
+        <a href="#ovo">vai para o ovo</a>
         <AppRoutes />
+
+        <div style={{
+          height: '500vh',
+          width: '100%'
+        }}> 
+        
+        <p id='ovo' style={{marginTop: '2000px'}}>patos so que ovo</p>
+        </div>
       </body>
     </div>
   );
