@@ -1,39 +1,25 @@
-// // _variables.scss
+@import './Palette.module.scss';
 
-// $light-primary: #4985b8;
-// $light-secondary: #55998e;
+@mixin light-theme {
+  --black : #{$common_black};
+  --white : #{$common_white};
+  --primary : #{$primary_light};
+  --secondary : #{$secondary_light};
+  --tertiary : #{$tertiary_light};
+  --success : #{$success_light};
+  --error : #{$error_light};
+  --warning : #{$warning_light};
+  --info : #{$info_light};
+}
 
-// $dark-primary: #1c1c1e;
-// $dark-secondary: #2c2c2e;
-
-// // _mixins.scss
-
-// @mixin light-theme {
-//   --primary: #{$light-primary};
-//   --secondary: #{$light-secondary};
-// }
-
-// @mixin dark-theme {
-//   --primary: #{$dark-primary};
-//   --secondary: #{$dark-secondary};
-// }
-
-
-
-
-// @import './Reset.module.scss';
-// @import './Theme.module.scss';
-
-// #root.light {
-//   --teste: red;
-
-//   @include light-theme;
-// }
-
-// #root.dark {
-//   @include dark-theme;
-// }
-
-// .title {
-//   background-color: var(--color-primary);
-// }
+@mixin dark-theme {
+  --black : #{$common_black};
+  --white : #{$common_white};
+  --primary : #{$primary_dark};
+  --secondary : #{$secondary_dark};
+  --tertiary : #{$tertiary_dark};
+  --success : #{$success_dark};
+  --error : #{$error_dark};
+  --warning : #{$warning_dark};
+  --info : #{$info_dark};
+}

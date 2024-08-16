@@ -1,0 +1,63 @@
+// common
+  $common_black: '#000';
+  $common_white: '#FFF';
+
+  // primary
+  $primary_light: '#333';
+  $primary_main: '#2A3946';
+  $primary_dark: '#1E2B38';
+  $primary_contrastText: '#FFF';
+
+  // secondary
+  $secondary_light: '#f4f4f4';
+  $secondary_main: '#e0e1dd';
+  $secondary_dark: '#BFBFBF';
+  $secondary_contrastText: '#FFF';
+
+  // tertiary
+  $tertiary_light: '#F5F5F5';
+  $tertiary_main: '#F5F5F5';
+  $tertiary_dark: '#EAEAEA';
+  $tertiary_contrastText: '#FFF';
+
+  // success
+  $success_light: '#6AD01F';
+  $success_main: '#56CA00';
+  $success_dark: '#4CB200';
+  $success_contrastText: '#FFF';
+
+  // error
+  $error_light: '#FF6166';
+  $error_main: '#FF4C51';
+  $error_dark: '#E04347';
+  $error_contrastText: '#FFF';
+
+  // warning
+  $warning_light: '#FFCA64';
+  $warning_main: '#FFB400';
+  $warning_dark: '#E09E00';
+  $warning_contrastText: '#FFF';
+
+  // info
+  $info_light: '#32BAFF';
+  $info_main: '#16B1FF';
+  $info_dark: '#139CE0';
+  $info_contrastText: '#FFF';
+
+
+  $grey: (
+    50: #FAFAFA,
+    100: #F5F5F5,
+    200: #EEEEEE,
+    300: #E0E0E0,
+    400: #BDBDBD,
+    500: #9E9E9E,
+    600: #757575,
+    700: #616161,
+    800: #424242,
+    900: #212121,
+    A100: #D5D5D5,
+    A200: #AAAAAA,
+    A400: #616161,
+    A700: #303030
+  );

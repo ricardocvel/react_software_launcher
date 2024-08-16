@@ -1,0 +1,56 @@
+.header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem 0;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    li {
+      position: relative; /* Needed for the dropdown */
+      margin: 0 1rem;
+
+      &:hover > ul {
+        display: block;
+      }
+
+      a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          color: #f4f4f4;
+          text-decoration: underline;
+        }
+      }
+
+      ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        display: none;
+        list-style: none;
+        padding: 0.5rem 0;
+
+        li {
+          margin: 0;
+          padding: 0.5rem 1rem;
+
+          a {
+            color: var(--primary);
+            text-decoration: none;
+
+            &:hover {
+              color: var(--primary-dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}

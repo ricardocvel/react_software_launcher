@@ -1,21 +1,10 @@
 @import './Reset.module.scss';
-
-@mixin light-theme {
-  --primary: #4985b8;
-  --text: #363636
-}
-
-@mixin dark-theme {
-  --primary: #55998e;
-  --text: #ffffff
-}
+@import './Theme.module.scss';
 
 
 :root {
   @include light-theme()
 }
-
-
 
 .light {
   @include light-theme()
@@ -25,9 +14,7 @@
   @include dark-theme()
 }
 
-
-
 .title {
-  background-color: var(--primary);
-  color: var(--text);
+  background-color: var(--warning);
+  color: var(--secondary);
 }

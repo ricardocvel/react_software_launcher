@@ -8,3 +8,19 @@ sass -> scss
 npm i react-router-dom --save
 npm i i18n
 npm i sass
+
+estrutura de pastas
+
+src
+|-- @types
+|-- components
+|-- contexts
+| |-- hooks
+| |-- language
+| |-- models
+| |-- utils
+|-- pages
+|-- routes
+|-- services
+|-- shared
+|-- style
