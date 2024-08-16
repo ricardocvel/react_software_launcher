@@ -28,38 +28,47 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav>
-        <ul>
-          <li>
-            <a href='#apresentacao'>Apresentação</a>
-          </li>
-          <li>
-            <a href='#about'>About</a>
-          </li>
-          <li>
-            <a href='#contato'>Contato</a>
-          </li>
-          <li>
-            <a href='#outro'>Outro</a>
-          </li>
-          <li>
-            <a href='#' onClick={toggleTheme}>
-              {theme === 'light' ? (
-                <LiaMoonSolid className={styles.icons} size={30} />
-              ) : (
-                <LiaSunSolid className={styles.icons} size={30} />
-              )}
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <LiaLanguageSolid className={styles.icons} size={30} />
-            </a>
-            <ul>
-              <li onClick={() => handleLanguageChange('ptBr')}>ptBr</li>
-              <li onClick={() => handleLanguageChange('en')}>en</li>
-            </ul>
-          </li>
-        </ul>
+        <div className={styles.divItems}>
+          <a href='#apresentacao'>Apresentação</a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href='#apresentacao'>Apresentação</a>
+            </li>
+            <li>
+              <a href='#about'>About</a>
+            </li>
+            <li>
+              <a href='#contato'>Contato</a>
+            </li>
+            <li>
+              <a href='#outro'>Outro</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href='#' onClick={toggleTheme}>
+                {theme === 'light' ? (
+                  <LiaMoonSolid className={styles.icons} size={30} />
+                ) : (
+                  <LiaSunSolid className={styles.icons} size={30} />
+                )}
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <LiaLanguageSolid className={styles.icons} size={30} />
+              </a>
+              <ul>
+                <li onClick={() => handleLanguageChange('ptBr')}>ptBr</li>
+                <li onClick={() => handleLanguageChange('en')}>en</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );

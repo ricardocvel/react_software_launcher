@@ -1,16 +1,27 @@
 .header {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--secondary);
+  color: var(--primary);
   padding: 1rem 0;
 
-  nav ul {
-    list-style: none;
+
+  nav {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0;
+    margin-right: 20px;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
 
     li {
-      position: relative; /* Needed for the dropdown */
+       /* Needed for the dropdown */
+      position: relative;
       margin: 0 1rem;
 
       &:hover > ul {
@@ -18,12 +29,12 @@
       }
 
       a {
-        color: var(--white);
+        color: var(--primary);
         text-decoration: none;
         font-weight: bold;
 
         &:hover {
-          color: #f4f4f4;
+          color: var(--tertiary);
           text-decoration: underline;
         }
       }
@@ -32,7 +43,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #fff;
+        background-color: var(--secondary);
         display: none;
         list-style: none;
         padding: 0.5rem 0;
@@ -52,5 +63,10 @@
         }
       }
     }
+  }
+
+  .divItems {
+    margin-left: 40px;
+    min-width: 50%;
   }
 }
