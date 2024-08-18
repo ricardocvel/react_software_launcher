@@ -1,8 +1,10 @@
+@import 'style/Typography.module.scss';
+
 .header {
   background-color: var(--secondary);
   color: var(--primary);
   padding: 1rem 0;
-
+  height: 6vh;
 
   nav {
     display: flex;

@@ -1,76 +1,143 @@
 @import 'style/Theme.module.scss';
 
 .container {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
   background-color: var(--secondary);
-  color: var(--primary);
+  // background-color: aqua;
 }
 
-.header {
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 1rem 0;
-
-  nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      padding: 0;
-
-      li {
-          margin: 0 1rem;
-
-          a {
-              color: var(--white);
-              text-decoration: none;
-              font-weight: bold;
-
-              &:hover {
-                  color: #f4f4f4;
-                  text-decoration: underline;
-              }
-          }
-      }
-  }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-main {
+// footer {
+//   position: fixed;
+//   bottom: 0;
+//   width: 100%;
+//   z-index: 1000;
+// }
+
+// cessao 01
+.presentation {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
   padding: 2rem;
+  height: 88vh;
+}
 
-  section {
-      margin-bottom: 2rem;
-  }
+.description {
+  margin-top: 6%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  #apresentacao {
-      background: #fff;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+.containerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6rem;
+  width: 36%;
 
-  #about {
-      background: #f9f9f9;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  #contato {
-      background: #fff;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  div {
+    background-color: var(--primary);
+    border-radius: 4%;
   }
 }
 
-.footer {
-  background-color: #333;
-  color: #fff;
+.title1 {
+  font-size: 1.8rem;
+}
+
+.text1 {
+  font-size: 1.4rem;
+  max-width: 80%;
+}
+
+// cessao 02
+.about {
+  // background-color: var(--primary);
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88vh;
+  // width: 99vw;
+
+  .aboutDescription {
+    display: flex;
+    // width: 45%;
+    margin-left: 8rem;
+    margin-right: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    // background-color: aqua;
+
+    p {
+      font-size: 1.4rem;
+      text-align: justify;
+    }
+  }
+
+  .aboutContainerImg {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 25%;
+    position: relative;
+
+    div {
+      border-radius: 4%;
+      position: relative;
+    }
+
+    img {
+      display: block;
+      border-radius: 4%;
+    }
+
+    .prevButton,
+    .nextButton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--black);
+      color: var(--white);
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    .prevButton {
+      left: 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .nextButton {
+      right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+  }
+}
+// cessao 03
+.about,
+.contact {
+  margin-left: 10%;
+  height: 88vh;
+  padding: 2rem;
+}
+
+.center {
   text-align: center;
-  padding: 1rem 0;
-}
-
-.icons {
-
-  color: aquamarine;
 }

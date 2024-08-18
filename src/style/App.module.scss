@@ -1,5 +1,6 @@
 @import './Reset.module.scss';
 @import './Theme.module.scss';
+@import './Typography.module.scss';
 
 
 :root {
@@ -12,9 +13,4 @@
 
 .dark {
   @include dark-theme()
-}
-
-.title {
-  background-color: var(--warning);
-  color: var(--secondary);
 }

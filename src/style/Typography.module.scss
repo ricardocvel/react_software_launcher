@@ -1,0 +1,68 @@
+
+// Vars
+// $font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Merriweather', serif;
+$font-primary: 'Open Sans', sans-serif;
+
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$heading-font-weight: 700;
+$body-font-weight: 400;
+
+$color-text-primary: var(--primary);
+$color-text-secondary: var(--secondary);
+
+// Mixins
+@mixin heading-style($size, $line-height: 1.2) {
+  font-family: $font-primary;
+  font-weight: $heading-font-weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color-text-primary;
+}
+
+@mixin body-style($size: $font-size-base) {
+  font-family: $font-primary;
+  font-weight: $body-font-weight;
+  font-size: $size;
+  line-height: $line-height-base;
+  color: $color-text-primary;
+}
+
+// Global Styles
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text-primary;
+}
+
+h1 {
+  @include heading-style(2.5rem);
+}
+
+h2 {
+  @include heading-style(2rem);
+}
+
+h3 {
+  @include heading-style(1.75rem);
+}
+
+h4 {
+  @include heading-style(1.5rem);
+}
+
+h5 {
+  @include heading-style(1.25rem);
+}
+
+h6 {
+  @include heading-style(1rem);
+}
+
+p {
+  @include body-style();
+  margin-bottom: 1rem;
+}

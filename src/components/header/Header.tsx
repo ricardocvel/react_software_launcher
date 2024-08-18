@@ -10,7 +10,7 @@ import { UseTranslate } from 'contexts/TranslatorProvider';
 
 export default function Header() {
   const { theme, setTheme } = UseSettings();
-  const { setLang } = UseTranslate();
+  const { setLang, translate } = UseTranslate();
 
   const toggleTheme = () => {
     if (theme === 'light') {
@@ -29,21 +29,21 @@ export default function Header() {
     <header className={styles.header}>
       <nav>
         <div className={styles.divItems}>
-          <a href='#apresentacao'>Apresentação</a>
+          <a href='#presentation'>{translate.Presentation}</a>
         </div>
         <div>
           <ul>
             <li>
-              <a href='#apresentacao'>Apresentação</a>
+              <a href='#presentation'>{translate.Presentation}</a>
             </li>
             <li>
-              <a href='#about'>About</a>
+              <a href='#about'>{translate.About}</a>
             </li>
             <li>
-              <a href='#contato'>Contato</a>
+              <a href='#contact'>{translate.Contact}</a>
             </li>
             <li>
-              <a href='#outro'>Outro</a>
+              <a href='#blog'>{translate.Blog}</a>
             </li>
           </ul>
         </div>
