@@ -18,6 +18,8 @@ const lang_ptBr = {
     'Minha paixão vai além do software, abrangendo também elétrica e eletrônica digital. Adoro consertar e restaurar equipamentos, transformando desafios em oportunidades de aprendizado.',
   text4:
     'Sou formado em Análise e Desenvolvimento de Sistemas e também possuo formação técnica em Automação. Quando não estou mergulhado no código, gosto de aproveitar meu tempo livre jogando, pescando, ou relaxando nas praias paradisíacas da região.',
+  text5:
+    'Caso tenha alguma dúvida entre em contato através das minhas redes sociais, para contato profissional use o e-mail ou WhatsApp.',
   textFooter: 'Todos os direitos reservados.'
 };
 

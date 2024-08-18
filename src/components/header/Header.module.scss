@@ -4,7 +4,7 @@
   background-color: var(--secondary);
   color: var(--primary);
   padding: 1rem 0;
-  height: 6vh;
+  height: 8vh;
 
   nav {
     display: flex;
@@ -36,7 +36,7 @@
         font-weight: bold;
 
         &:hover {
-          color: var(--tertiary);
+          color: var(--error);
           text-decoration: underline;
         }
       }
@@ -53,13 +53,15 @@
         li {
           margin: 0;
           padding: 0.5rem 1rem;
+          cursor: pointer;
+
 
           a {
             color: var(--primary);
             text-decoration: none;
 
             &:hover {
-              color: var(--primary-dark);
+              color: var(--error);
             }
           }
         }
@@ -71,4 +73,14 @@
     margin-left: 40px;
     min-width: 50%;
   }
+
+  .icons {
+    color: var(--primary);
+
+    &:hover {
+      color: var(--error);
+    }
+  }
+
+
 }

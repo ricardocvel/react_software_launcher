@@ -43,7 +43,7 @@ export default function Header() {
               <a href='#contact'>{translate.Contact}</a>
             </li>
             <li>
-              <a href='#blog'>{translate.Blog}</a>
+              <a href='#'>{translate.Blog}</a>
             </li>
           </ul>
         </div>
@@ -63,8 +63,15 @@ export default function Header() {
                 <LiaLanguageSolid className={styles.icons} size={30} />
               </a>
               <ul>
-                <li onClick={() => handleLanguageChange('ptBr')}>ptBr</li>
-                <li onClick={() => handleLanguageChange('en')}>en</li>
+                <li>
+                  <a onClick={() => handleLanguageChange('ptBr')}>pt</a>
+                </li>
+                <li>
+                  <a onClick={() => handleLanguageChange('en')}>en</a>
+                </li>
+                <li>
+                  <a onClick={() => handleLanguageChange('es')}>es</a>
+                </li>
               </ul>
             </li>
           </ul>

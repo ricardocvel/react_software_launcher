@@ -13,6 +13,13 @@ import photo02 from 'assets/images/photo_002.png';
 import photo03 from 'assets/images/photo_003.png';
 import photo04 from 'assets/images/photo_004.png';
 
+import { LiaWhatsapp } from 'react-icons/lia';
+import { LiaHomeSolid } from 'react-icons/lia';
+import { GrMailOption } from 'react-icons/gr';
+import { LiaGithub } from 'react-icons/lia';
+import { LiaLinkedinIn } from 'react-icons/lia';
+import { LiaYoutube } from 'react-icons/lia';
+
 const images = [photo02, photo03, photo04];
 
 export default function Home() {
@@ -50,6 +57,9 @@ export default function Home() {
           </p>
           <h1>{translate.Im} Ricardo Campos</h1>
           <p className={styles.text1}>{translate.text1}</p>
+          <a href='#contact' className={styles.btnOne}>
+            {translate.Contact}
+          </a>
         </div>
         <div className={styles.containerImg}>
           <div>
@@ -81,8 +91,59 @@ export default function Home() {
 
       {/* Contact */}
       <section id='contact' className={styles.contact}>
-        <h2>Contato</h2>
-        <p>Entre em contato através das redes sociais ou email abaixo.</p>
+        <div className={styles.contactDescription}>
+          <div className={styles.contactLinks}>
+            <h1 className={styles.center}>{translate.Contact}</h1>
+            <p>{translate.text5}</p>
+          </div>
+          <div className={styles.contactItems}>
+            <ul>
+              <li>
+                <a href='https://api.whatsapp.com/send?phone=5548988719026&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site!'>
+                  <LiaWhatsapp className={styles.icons} size={40} />
+                  <p>+55 48 988719026</p>
+                </a>
+              </li>
+              <li>
+                <a href='ricardocampos_pr@live.com'>
+                  <GrMailOption className={styles.icons} size={40} />
+                  <p>ricardocampos_pr@live.com</p>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <LiaHomeSolid className={styles.icons} size={40} />
+                  <p>Florianópolis SC - Brasil</p>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href='https://github.com/ricardocvel'>
+                  <LiaGithub className={styles.icons} size={40} />
+                  <p>@ricardocvel</p>
+                </a>
+              </li>
+              <li>
+                <a href='https://www.linkedin.com/in/ricardocvel/'>
+                  <LiaLinkedinIn className={styles.icons} size={40} />
+                  <p>ricardocvel</p>
+                </a>
+              </li>
+              <li>
+                <a href='https://www.youtube.com/@ricardocamposdev'>
+                  <LiaYoutube className={styles.icons} size={40} />
+                  <p>@ricardocamposdev</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.containerImg}>
+          <div>
+            <img src={photo01} alt='image of the author' style={{ width: '35rem', height: 'auto' }} />
+          </div>
+        </div>
       </section>
       <Footer />
     </div>

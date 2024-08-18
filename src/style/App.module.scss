@@ -14,3 +14,13 @@
 .dark {
   @include dark-theme()
 }
+
+button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 16px;
+  height: 50px;
+  text-align: center;
+  width: auto;
+  cursor: pointer;
+}
