@@ -6,6 +6,32 @@
   padding: 1rem 0;
   height: 8vh;
 
+  .divLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .youtube {
+      margin-right: 15px;
+      color: var(--primary);
+      cursor: pointer;
+
+      &:hover {
+        color: #f70900;
+      }
+    }
+
+    .github {
+      margin-right: 15px;
+      color: var(--primary);
+      cursor: pointer;
+
+      &:hover {
+        color: #5869ba;
+      }
+    }
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -54,7 +80,6 @@
           margin: 0;
           padding: 0.5rem 1rem;
           cursor: pointer;
-
 
           a {
             color: var(--primary);

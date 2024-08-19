@@ -3,6 +3,9 @@ import { UseSettings } from 'contexts/SettingsContext';
 import { LiaLanguageSolid } from 'react-icons/lia';
 import { LiaSunSolid } from 'react-icons/lia';
 import { LiaMoonSolid } from 'react-icons/lia';
+import { ImYoutube2 } from 'react-icons/im';
+// import { FaYoutube } from "react-icons/fa";
+import { FaGithubAlt } from 'react-icons/fa6';
 
 // css
 import styles from './Header.module.scss';
@@ -20,18 +23,25 @@ export default function Header() {
     } else {
       setTheme('light');
     }
-    document.querySelector('#root')?.classList.toggle(styles[theme]);
   };
 
   const handleLanguageChange = (language: string) => {
-    setLang(language == 'ptBr' ? 'pt-br' : 'en');
+    setLang(language == 'pt-br' ? 'pt-br' : language == 'en' ? 'en' : 'es');
   };
 
   return (
     <header className={styles.header}>
       <nav>
         <div className={styles.divItems}>
-          <a href='#presentation'>{translate.Presentation}</a>
+          <div className={styles.divLeft}>
+            <a href='https://www.youtube.com/@ricardocamposdev'>
+              <ImYoutube2 className={styles.youtube} size={60} />
+            </a>
+            <a href='https://github.com/ricardocvel'>
+              <FaGithubAlt className={styles.github} size={35} />
+            </a>
+          </div>
+          {/* <a href='#presentation'>{translate.Presentation}</a> */}
         </div>
         <div>
           <ul>
@@ -83,7 +93,7 @@ export default function Header() {
               </a>
               <ul>
                 <li>
-                  <a onClick={() => handleLanguageChange('ptBr')}>pt</a>
+                  <a onClick={() => handleLanguageChange('pt-br')}>pt</a>
                 </li>
                 <li>
                   <a onClick={() => handleLanguageChange('en')}>en</a>

@@ -19,9 +19,17 @@ export const UseSettings = () => useContext(SettingsContext);
 export function SettingsProvider({ children }: SettingsProviderProps) {
   const [theme, setTheme] = useState<themeOptions>('light');
 
+  const _setTheme = (_theme: themeOptions) => {
+    console.log('Theme: ' + _theme + ' theme_old: ' + theme);
+    document.querySelector('#root')?.classList.toggle(styles[theme]);
+    setTheme(_theme);
+  };
+
   useEffect(() => {
+    console.log('theme_new: ' + theme);
+
     document.querySelector('#root')?.classList.add(styles[theme]);
   }, [theme]);
 
-  return <SettingsContext.Provider value={{ theme, setTheme }}>{children}</SettingsContext.Provider>;
+  return <SettingsContext.Provider value={{ theme, setTheme: _setTheme }}>{children}</SettingsContext.Provider>;
 }

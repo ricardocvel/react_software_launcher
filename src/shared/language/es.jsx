@@ -12,7 +12,7 @@ const lang_es = {
   Resume: 'currículo',
 
   // Texts
-  text1: 'Software developer, digital electronics enthusiast and Automation technician.',
+  text1: 'Desarrollador de software, entusiasta de la electrónica digital y técnico en Automatización.',
   text2:
     '¡Hola! Soy Ricardo, un entusiasta de la tecnología y Desarrollador de Software Senior, especializado en backend Java, con más de 5 años de experiencia en el campo. Resido en la hermosa ciudad de Florianópolis, SC, Brasil, donde continúo ampliando mis conocimientos en lenguajes y frameworks como Java, Node.js, TypeScript, React, entre otros.',
   text3:

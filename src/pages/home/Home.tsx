@@ -48,7 +48,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
-
       {/* Presentation */}
       <section id='presentation' className={styles.presentation}>
         <div className={styles.description}>
