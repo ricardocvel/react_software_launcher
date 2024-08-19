@@ -9,6 +9,7 @@ const lang_ptBr = {
   Hello: 'Olá',
   welcome: 'seja bem-vindo',
   Im: 'Eu Sou o',
+  Resume: 'currículo',
 
   // Texts
   text1: 'Desenvolvedor de software, entusiasta em eletrônica digital e Técnico em automação.',

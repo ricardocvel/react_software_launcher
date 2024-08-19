@@ -8,6 +8,8 @@ import { LiaMoonSolid } from 'react-icons/lia';
 import styles from './Header.module.scss';
 import { UseTranslate } from 'contexts/TranslatorProvider';
 
+//resume
+
 export default function Header() {
   const { theme, setTheme } = UseSettings();
   const { setLang, translate } = UseTranslate();
@@ -43,7 +45,24 @@ export default function Header() {
               <a href='#contact'>{translate.Contact}</a>
             </li>
             <li>
-              <a href='#'>{translate.Blog}</a>
+              <a href='#'>{translate.Resume}</a>
+              <ul>
+                <li>
+                  <a href='/pt_resume.pdf' download='pt_resume.pdf'>
+                    pt
+                  </a>
+                </li>
+                <li>
+                  <a href='/en_resume.pdf' download='en_resume.pdf'>
+                    en
+                  </a>
+                </li>
+                <li>
+                  <a href='/es_resume.pdf' download='es_resume.pdf'>
+                    es
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

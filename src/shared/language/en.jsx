@@ -9,6 +9,7 @@ const lang_en = {
   Hello: 'Hello',
   welcome: 'welcome',
   Im: `I'm`,
+  Resume: 'Resume',
 
   // Texts
   text1: 'Software developer, digital electronics enthusiast and Automation technician.',

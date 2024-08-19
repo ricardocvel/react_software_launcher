@@ -9,6 +9,8 @@ const lang_es = {
   Hello: 'Hola',
   welcome: 'bienvenido',
   Im: 'Soy',
+  Resume: 'currículo',
+
   // Texts
   text1: 'Software developer, digital electronics enthusiast and Automation technician.',
   text2:
