@@ -6,6 +6,7 @@ export function AppRoutes() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/teste' element={<Home />} />
       <Route path='/page_two' element={<p>page_two</p>} />
 
       <Route element={<PrivateRoutes />}>
