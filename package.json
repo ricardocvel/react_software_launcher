@@ -6,7 +6,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint 'src/**/*.ts' 'src/**/*.tsx'",
+    "lint_fix": "eslint ./src ./test --ext .ts --fix",
+    "format": "npx prettier '**/*.ts' '**/*.js' --write"
   },
   "dependencies": {
     "i18n": "^0.15.1",

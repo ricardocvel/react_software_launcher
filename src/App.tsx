@@ -5,6 +5,7 @@ import { TranslatorProvider } from 'contexts/TranslatorProvider';
 import { SettingsProvider } from 'contexts/SettingsContext';
 
 function App() {
+  // guardado para uso futuro
   // import { useNavigate } from 'react-router-dom';
   // const navigate = useNavigate();
   //   if (location.href.includes('page_two')) {
