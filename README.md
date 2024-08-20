@@ -26,3 +26,5 @@ src
 |-- style
 
 https://cssgradient.io/
+
+git checkout --orphan gh-pages
