@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "node": "18.16.0",
-  "homepage": "https://ricardocvel.github.io",
+  "homepage": "https://ricardocvel.github.io/teste/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
